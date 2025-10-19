@@ -1,0 +1,13 @@
+field,rule,count
+"published_at, closed_at",парсинг дат,3048
+категорії,lower/upper + strip,3048
+city,словник міст,3048
+address,видалення зайвих пробілів,3048
+lat/lon,виправлення переплутаних,67
+lat/lon,видалення поза межами,0
+"price, price_uah",видалення ≤0,27
+floor,корекція floor > floors_total,58
+area_kitchen,видалення area_kitchen > area_total,11
+area_total,видалення аномалій (<12 або >500),39
+повні дублі,видалення,46
+майже-дублі,видалення за адресою+параметрами,5
